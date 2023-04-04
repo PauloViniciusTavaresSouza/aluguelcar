@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/styles.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './Pages/Home';
 import { About } from './Pages/About';
@@ -17,7 +18,7 @@ function App() {
           <Route index path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="models" element={<Models />} />
-          <Route path="testimonalsPage" element={<TestimonalsPage />} />
+          <Route path="testimonials" element={<TestimonalsPage />} />
           <Route path="team" element={<Team />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
