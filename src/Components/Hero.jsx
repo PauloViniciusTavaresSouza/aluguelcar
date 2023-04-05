@@ -4,6 +4,9 @@ import HeroCar from '../images/hero/main-car.png';
 import { Link } from 'react-router-dom';
 
 export const Hero = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: (0, 0), behavior: 'smooth' });
+  };
   return (
     <>
       <section className="hero-section">
@@ -39,6 +42,13 @@ export const Hero = () => {
             />
           </div>
         </div>
+
+        {/* page up */}
+
+        <div
+          onClick={scrollToTop}
+          className={` "scroll-up" ${goUp ? 'show-scroll' : ''}`}
+        ></div>
       </section>
     </>
   );
