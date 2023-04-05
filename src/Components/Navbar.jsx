@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  console.log(nav);
   const openNav = () => {
     setNav(!nav);
   };
@@ -13,6 +12,46 @@ export const Navbar = () => {
   return (
     <>
       <nav>
+        {/* mobile */}
+
+        <div className={`mobile-navbar ${nav ? 'open-nav' : ''}`}>
+          <div onClick={openNav} className="mobile-navbar__close">
+            <i className="mobile-navbar__close__icon"></i>
+          </div>
+          <ul className="mobile-navbar__links">
+            <li>
+              <Link to="/" onClick={openNav}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="about" onClick={openNav}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="models" onClick={openNav}>
+                Models
+              </Link>
+            </li>
+            <li>
+              <Link to="testimonials" onClick={openNav}>
+                Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link to="team" onClick={openNav}>
+                Our Team
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" onClick={openNav}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+
         {/* desktop */}
         <div className="navbar">
           <div className="navbar__img">
@@ -60,6 +99,12 @@ export const Navbar = () => {
             <Link className="navbar__buttons__register" to="/">
               Register
             </Link>
+          </div>
+
+          {/* mobile */}
+
+          <div className="mobile-hamb" onClick={openNav}>
+            <i className="mobile-hamb__hamb"></i>
           </div>
         </div>
       </nav>
