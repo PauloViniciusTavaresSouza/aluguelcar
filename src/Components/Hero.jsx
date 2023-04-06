@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BgShape from '../images/hero/hero-bg.png';
 import HeroCar from '../images/hero/main-car.png';
 import { Link } from 'react-router-dom';
 
 export const Hero = () => {
+  const [goUp, setGoUp] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({ top: (0, 0), behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const onPageScroll = () => {
+      if (window.pageYOffset > 600) {
+        setGoUp(true);
+      } else {
+        setGoUp(false);
+      }
+    };
+
+    window.addEventListener('scroll', onPageScroll);
+
+    return () => {
+      window.removeEventListener('scroll', onPageScroll);
+    };
+  }, []);
+
   return (
     <>
       <section className="hero-section">
@@ -47,8 +66,10 @@ export const Hero = () => {
 
         <div
           onClick={scrollToTop}
-          className={` "scroll-up" ${goUp ? 'show-scroll' : ''}`}
-        ></div>
+          className={` scroll-up ${goUp ? 'show-scroll' : ''}`}
+        >
+          <i className="scroll-up__icon"></i>
+        </div>
       </section>
     </>
   );

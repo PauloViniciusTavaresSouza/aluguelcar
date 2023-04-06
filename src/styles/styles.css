@@ -84,7 +84,6 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  position: relative;
 }
 @media (max-width: 800px) {
   .hero-content {
@@ -185,6 +184,57 @@ body {
   .hero-content__car-img {
     display: none;
   }
+}
+
+.scroll-up {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: #FB4327;
+  z-index: 100000;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 3s;
+  animation: animationRight 2s;
+}
+@keyframes animationRight {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 25px;
+  }
+}
+.scroll-up__icon {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+  top: 22px;
+  left: 9px;
+  rotate: -50deg;
+  border-radius: 5px;
+}
+.scroll-up__icon::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+  top: 9px;
+  left: 8px;
+  rotate: 100deg;
+  border-radius: 5px;
+}
+
+.show-scroll {
+  display: flex;
 }
 
 .navbar {
