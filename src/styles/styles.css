@@ -174,7 +174,7 @@ body {
 }
 .hero-content__car-img {
   z-index: 2;
-  position: absolute;
+  position: relative;
   right: 0;
   max-width: 65%;
   width: 100%;
@@ -197,8 +197,8 @@ body {
   right: 25px;
   cursor: pointer;
   border-radius: 2px;
-  transition: all 3s;
-  animation: animationRight 2s;
+  transition: all 2s;
+  animation: animationRight 0.5s;
 }
 @keyframes animationRight {
   from {
@@ -398,4 +398,106 @@ body {
 
 .open-nav {
   left: 0;
+}
+
+.plan-section {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: column;
+}
+.plan-container__title {
+  text-align: center;
+  margin: 0 auto;
+  color: #010103;
+}
+.plan-container__title h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.plan-container__title h2 {
+  font-size: 43px;
+  font-weight: 700;
+  margin: 13px 0 30px 0;
+}
+@media (max-width: 950px) {
+  .plan-container {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+.plan-container__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+@media (max-width: 950px) {
+  .plan-container__boxes {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.plan-container__boxes__box {
+  text-align: center;
+  padding: 1rem 6rem;
+}
+@media (max-width: 500px) {
+  .plan-container__boxes__box {
+    padding: 1rem 1rem;
+  }
+}
+.plan-container__boxes__box img {
+  max-width: 170px;
+  width: 100%;
+  height: auto;
+}
+.plan-container__boxes__box h3 {
+  color: #010103;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+}
+.plan-container__boxes__box p {
+  color: #706F7B;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.book-section {
+  padding: 100px 0;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #F8F8F8 20%, #ffffff 80%);
+}
+
+.book-content {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1250px;
+  height: 350px;
+  margin-top: -200px;
+  border-radius: 5px;
+  z-index: 4;
+  box-shadow: 0px 10px 10px 5px #ECECEC;
+}
+@media (max-width: 1050px) {
+  .book-content {
+    margin-top: -80px;
+  }
+}
+.book-content input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
 }/*# sourceMappingURL=styles.css.map */

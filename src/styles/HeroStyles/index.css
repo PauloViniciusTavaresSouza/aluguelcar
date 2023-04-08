@@ -113,7 +113,7 @@
 }
 .hero-content__car-img {
   z-index: 2;
-  position: absolute;
+  position: relative;
   right: 0;
   max-width: 65%;
   width: 100%;
@@ -136,8 +136,8 @@
   right: 25px;
   cursor: pointer;
   border-radius: 2px;
-  transition: all 3s;
-  animation: animationRight 2s;
+  transition: all 2s;
+  animation: animationRight 0.5s;
 }
 @keyframes animationRight {
   from {
