@@ -19,7 +19,7 @@ export const PickCar = () => {
       <section className="pick-section">
         <div className="container">
           <div className="pick-container">
-            <div className="pick-container_title">
+            <div className="pick-container__title">
               <h3>Vehicle Models</h3>
               <h2>Our rental fleet</h2>
               <p>
