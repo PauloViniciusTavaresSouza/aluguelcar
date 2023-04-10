@@ -500,4 +500,9 @@ body {
   width: 200px;
   padding: 10px;
   margin: 10px;
+}
+
+.colored-button {
+  background-color: #FF4D30;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
