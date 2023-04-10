@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { CAR_DATA } from './DataCar';
+import { CarBox } from './CarBox';
 
 export const PickCar = () => {
   const [active, setActive] = useState('FirstCar');
   const [colorBtn, setColorBtn] = useState('btn1');
-
-  console.log(colorBtn);
 
   const btnID = (id) => {
     setColorBtn(colorBtn === id ? '' : id);
@@ -90,6 +90,12 @@ export const PickCar = () => {
                   VW Passat CC
                 </button>
               </div>
+              {active === 'FirstCar' && <CarBox data={CAR_DATA} carID={0} />}
+              {active === 'SecondCar' && <CarBox data={CAR_DATA} carID={1} />}
+              {active === 'ThirdCar' && <CarBox data={CAR_DATA} carID={2} />}
+              {active === 'FourthCar' && <CarBox data={CAR_DATA} carID={3} />}
+              {active === 'FifthCar' && <CarBox data={CAR_DATA} carID={4} />}
+              {active === 'SixthCar' && <CarBox data={CAR_DATA} carID={5} />}
             </div>
           </div>
         </div>
