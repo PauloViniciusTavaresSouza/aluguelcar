@@ -3,6 +3,7 @@ import { Hero } from '../Components/Hero';
 import { PlanTrip } from '../Components/PlanTrip';
 import { BookCar } from '../Components/BookCar';
 import { PickCar } from '../Components/PickCar';
+import { Banner } from '../Components/Banner';
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <BookCar />
       <PlanTrip />
       <PickCar />
+      <Banner />
     </>
   );
 };
