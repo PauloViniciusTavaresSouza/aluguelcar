@@ -4,6 +4,8 @@ import { PlanTrip } from '../Components/PlanTrip';
 import { BookCar } from '../Components/BookCar';
 import { PickCar } from '../Components/PickCar';
 import { Banner } from '../Components/Banner';
+import { ChooseUs } from '../Components/ChooseUs';
+import { Testimonials } from '../Components/Testimonials';
 
 export const Home = () => {
   return (
@@ -13,6 +15,8 @@ export const Home = () => {
       <PlanTrip />
       <PickCar />
       <Banner />
+      <ChooseUs />
+      <Testimonials />
     </>
   );
 };

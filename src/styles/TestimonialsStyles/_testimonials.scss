@@ -1,0 +1,118 @@
+.testimonials-section {
+  display: flex;
+  background-color: #F8F8F8;
+  padding: 80px 0 100px 0;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    color: #010103;
+    max-width: 70rem;
+    margin-bottom: 50px;
+
+    h3 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 4.4rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.6rem;
+      color: #706F7B;
+      line-height: 1.4;
+    }
+  }
+
+  &__testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width:800px) {
+flex-direction: column;
+    }
+
+    &__box {
+      background-color: #fff;
+      padding: 50px;
+      margin: 20px;
+      height: auto;
+      max-width: 500px;
+      min-height: 300px;
+
+      @media(max-width:450px) {
+        padding: 20px;
+        margin: 5px 0 ;
+        min-height: 250px;
+      }
+      
+      h4 {
+        font-size: 2.2rem;
+        font-weight: 500;
+
+        @media(max-width:450px) {
+          font-size: 1.6rem;
+        }
+      }
+      
+      &__users {
+        margin-top: 20px;
+        display: flex;
+        
+        &__user {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        &__name {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          &__title {
+            margin: 10px;
+
+            h5 {
+              font-size: 1.8rem;
+
+              @media(max-width:450px) {
+                font-size: 1.4rem;
+              }
+            }
+            p {
+              font-size: 1.6rem;
+              font-weight: 400;
+
+              @media(max-width:450px) {
+                font-size: 1.4rem;
+              }
+            }
+
+          }
+
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+          }
+        }
+       }
+      }
+    }
+  }
+}
+
+.aspas-img {
+  width: 50px;
+  height: 50px;
+}
