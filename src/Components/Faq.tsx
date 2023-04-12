@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
 export const Faq = () => {
-  const [activeF, setActiveF] = useState('q1');
+  const [activeF, setActiveF] = useState<string>('q1');
 
-  const openQ = (id) => {
+  const openQ = (id: string) => {
     setActiveF(activeF === id ? '' : id);
   };
 
-  const openResposta = (id) => {
+  const openResposta = (id: string) => {
     return activeF === id ? 'respotaOpen' : '';
   };
 
-  const activeBackground = (id) => {
+  const activeBackground = (id: string) => {
     return activeF === id ? 'active' : '';
   };
   return (

@@ -3,9 +3,9 @@ import ImgLogo from '../images/logo/logo.png';
 import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState<boolean>(false);
 
-  const openNav = () => {
+  const openNav = (): void => {
     setNav(!nav);
   };
 
@@ -55,7 +55,7 @@ export const Navbar = () => {
         {/* desktop */}
         <div className="navbar">
           <div className="navbar__img">
-            <Link onClick={() => window.scrollTo(0, 0)}>
+            <Link to='' onClick={() => window.scrollTo(0, 0)}>
               <img src={ImgLogo} alt="image logo" />
             </Link>
           </div>
