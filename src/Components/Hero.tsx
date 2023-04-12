@@ -4,14 +4,14 @@ import HeroCar from '../images/hero/main-car.png';
 import { Link } from 'react-router-dom';
 
 export const Hero = () => {
-  const [goUp, setGoUp] = useState(false);
+  const [goUp, setGoUp] = useState<boolean>(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: (0, 0), behavior: 'smooth' });
+  const scrollToTop = (): void => {
+    window.scrollTo({ top: (0), behavior: 'smooth' });
   };
 
   useEffect(() => {
-    const onPageScroll = () => {
+    const onPageScroll = (): void => {
       if (window.pageYOffset > 600) {
         setGoUp(true);
       } else {
