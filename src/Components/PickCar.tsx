@@ -3,14 +3,14 @@ import { CAR_DATA } from './DataCar';
 import { CarBox } from './CarBox';
 
 export const PickCar = () => {
-  const [active, setActive] = useState('FirstCar');
-  const [colorBtn, setColorBtn] = useState('btn1');
+  const [active, setActive] = useState<string>('FirstCar');
+  const [colorBtn, setColorBtn] = useState<string>('btn1');
 
-  const btnID = (id) => {
+  const btnID = (id: string) => {
     setColorBtn(colorBtn === id ? '' : id);
   };
 
-  const coloringButton = (id) => {
+  const coloringButton = (id: string) => {
     return colorBtn === id ? 'colored-button' : '';
   };
 
