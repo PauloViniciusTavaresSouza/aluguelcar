@@ -238,19 +238,19 @@ body {
 }
 
 .navbar {
-  max-width: 1980px;
+  max-width: 133rem;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 20px;
   margin: 0 auto;
-  z-index: 99999;
+  z-index: 999;
 }
 .navbar__img {
   width: 150px;
@@ -349,7 +349,7 @@ body {
   height: 100vh;
   background-color: #fff;
   z-index: 1000;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   transition: all 0.5s ease-in-out;
