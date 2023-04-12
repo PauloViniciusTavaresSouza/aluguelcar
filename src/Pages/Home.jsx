@@ -7,6 +7,7 @@ import { Banner } from '../Components/Banner';
 import { ChooseUs } from '../Components/ChooseUs';
 import { Testimonials } from '../Components/Testimonials';
 import { Faq } from '../Components/Faq';
+import { Donwload } from '../Components/Donwload';
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
       <ChooseUs />
       <Testimonials />
       <Faq />
+      <Donwload />
     </>
   );
 };
