@@ -8,6 +8,7 @@ import { ChooseUs } from '../Components/ChooseUs';
 import { Testimonials } from '../Components/Testimonials';
 import { Faq } from '../Components/Faq';
 import { Donwload } from '../Components/Donwload';
+import { Footer } from '../Components/Footer';
 
 export const Home = () => {
   return (
@@ -21,6 +22,7 @@ export const Home = () => {
       <Testimonials />
       <Faq />
       <Donwload />
+      <Footer />
     </>
   );
 };
