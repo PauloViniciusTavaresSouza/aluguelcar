@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 
-export const CarBox = ({ data, carID }) => {
-  const [carLoad, setCarLoad] = useState(true);
+interface CarBoxProps {
+  data: any,
+  carID: number,
+}
+
+export const CarBox: React.FC<CarBoxProps> = ({ data, carID }) => {
+  const [carLoad, setCarLoad] = useState<boolean>(true);
 
   return (
     <>
-      {data[carID].map((car, id) => {
+      {data[carID].map((car: any, id: number) => {
         return (
           <div key={id} className="box-cars">
             <div className="pick-car">
