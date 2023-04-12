@@ -6,6 +6,7 @@ import { PickCar } from '../Components/PickCar';
 import { Banner } from '../Components/Banner';
 import { ChooseUs } from '../Components/ChooseUs';
 import { Testimonials } from '../Components/Testimonials';
+import { Faq } from '../Components/Faq';
 
 export const Home = () => {
   return (
@@ -17,6 +18,7 @@ export const Home = () => {
       <Banner />
       <ChooseUs />
       <Testimonials />
+      <Faq />
     </>
   );
 };

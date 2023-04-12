@@ -1,0 +1,111 @@
+.faq-section {
+  display: flex;
+  padding: 50px 0 100px 0;
+
+
+
+  background-image: url("/src/images/faq/car.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+}
+
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  width: 100%;
+
+  &__title {
+    max-width: 80rem;
+    text-align: center;
+    color: #010103;
+
+    h3 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 4.2rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.6rem;
+      color: #706F7B;
+    }
+  }
+
+  &__faq {
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1); 
+    
+    &__button{
+      margin: 10px 0;
+      padding: 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      color: #010103;
+
+      p {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+
+      &__respota {
+
+        font-size: 1.6rem;
+        color: #706f7b;
+        line-height: 1.7;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition:  0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+        padding: 0 4.5rem;
+        
+      }
+    }
+  }
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  color: #010103;
+  background-color: white;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+
+  width: 80rem;
+  cursor: pointer;
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+}
+
+.active {
+  background-color: #FF4D30;
+  color: #fff;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.respotaOpen {
+  max-height: 20rem;
+  padding: 2.8rem 4.5rem;
+  transition: 0.4s ease;
+
+  @media (max-width: 550px) {
+    max-height: 30rem;
+  }
+
+  @media (max-width: 420px) {
+    max-height: 55rem;
+  }
+}
